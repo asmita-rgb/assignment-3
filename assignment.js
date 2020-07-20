@@ -33,6 +33,9 @@ function brickCalculator(floor){
     var brickFeet4 = 0;
     var brickFeet5 = 0;
     var brickFeet6 = 0;
+    if(floor < 0){
+        return "Please, enter a positive value."
+    }
     if(floor >=0 && floor <=10){
         brickFeet1 = floor * 15 * everyFeetBrick;
     }
